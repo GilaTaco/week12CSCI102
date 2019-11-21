@@ -43,3 +43,11 @@ def Intersection(list1,list2):
         if i in list2:
             out.append(i)
     return(out)
+
+def NotIn(list1,list2):
+    out = []
+    for i in list1:
+        if i not in list2:
+            out.append(i)
+    return(out)
+print("OUTPUT", NotIn(players2, players))
