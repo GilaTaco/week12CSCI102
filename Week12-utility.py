@@ -19,3 +19,12 @@ def UpdateString(stronk,replonk,place):
 def FindWordCount(listicate,what):
     output = listicate.count(what)
     return(output)
+players = ["Mary", "Cody", "Joe", "Jill", "Xai", "Bodo"]
+scores = [5, 8, 10, 6, 10, 4]
+def ScoreFinder(child,numbers,whomst):
+    childs = [i.lower() for i in list(child)]
+    if whomst.lower() in childs:
+        print('OUTPUT',child[childs.index(whomst.lower())],'got a score of',numbers[childs.index(whomst.lower())])
+    else:
+        print('OUTPUT Player not found')
+ScoreFinder(players, scores, "jill")
