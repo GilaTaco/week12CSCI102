@@ -35,4 +35,11 @@ def Union(thing,otherthing):
         if things not in thing:
             out.append(things)
     return(out)
-print("OUTPUT", Union(scores, players2))
+
+
+def Intersection(list1,list2):
+    out = []
+    for i in list1:
+        if i in list2:
+            out.append(i)
+    return(out)
