@@ -11,3 +11,9 @@ def LoadFile(fileboi):
     for lines in intake:
         out.append(lines.replace('\n',''))
     print(out)
+def UpdateString(stronk,replonk,place):
+    listboi = [i for i in stronk]
+    listboi[place] = replonk
+    out = ''.join(listboi)
+    print(out)
+UpdateString("Hello World", "a", 3)
