@@ -5,3 +5,9 @@
 def PrintOutput(beans):
     print('OUTPUT',beans)
 
+def LoadFile(fileboi):
+    intake = open(fileboi,'r')
+    out = []
+    for lines in intake:
+        out.append(lines.replace('\n',''))
+    print(out)
