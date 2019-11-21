@@ -21,10 +21,18 @@ def FindWordCount(listicate,what):
     return(output)
 players = ["Mary", "Cody", "Joe", "Jill", "Xai", "Bodo"]
 scores = [5, 8, 10, 6, 10, 4]
+players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]
 def ScoreFinder(child,numbers,whomst):
     childs = [i.lower() for i in list(child)]
     if whomst.lower() in childs:
         print('OUTPUT',child[childs.index(whomst.lower())],'got a score of',numbers[childs.index(whomst.lower())])
     else:
         print('OUTPUT Player not found')
-ScoreFinder(players, scores, "jill")
+
+def Union(thing,otherthing):
+    out = thing
+    for things in otherthing:
+        if things not in thing:
+            out.append(things)
+    return(out)
+print("OUTPUT", Union(scores, players2))
